@@ -1,11 +1,180 @@
 
 *{
     margin: 0;
-    padding: 0;
+    font-size: 1px;
 }
 
 
-li{
+/* CSS NAVBAR */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    min-height: 12vh;
+    background-color: #FFE5DE;
+    align-items: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    margin-right: 10%;
+}
+
+
+a{
     text-decoration: none;
+    color: black;
+    font-size: 16em;
 }
+
+
+/* BOTONES */
+
+.color-boton{
+    padding: 10px 30px;
+    background-color: #FF0033;
+    color: #FFE5DE;
+    border: 1px solid #FF004D;
+    border-radius: 25px;
+}
+
+
+/* ------------------- */
+
+
+/* CSS Seccion de presentacion */
+
+.container-hola{
+    min-height: 88vh;
+    background-color: #FFE5DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.container-texto-hola{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 300px;
+    justify-content: space-evenly;
+}
+
+
+.nombre{
+    color: #FF0033;
+    font-size: 2em;
+}
+
+
+.lo-que-hago{
+    width: fit-content;
+}
+
+
+.retrato{
+    width: 25%;
+    height: 25%;
+}
+
+
+h2{
+    font-size: 2em;
+}
+
+
+p{
+    font-size: 16em;
+}
+
+
+/* ------------------- */
+
+
+
+.container-conocimientos{
+    min-height: 120vh;
+    background-color: #fed7d7;
+}
+
+
+.container-cita{
+    min-height: 60vh;
+    background-color: #FF0033;
+}
+
+
+.container-proyectos{
+    min-height: 150vh;
+    background-color: #FFE5DE;
+}
+
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+
+.container-contacto{
+    min-height: 120vh;
+    background-color: #fed7d7;
+}
+
+
+
+footer{
+    min-height: 30vh;
+    background-color: #FF0033;
+}
+
+
+/* MEDIA QUERYS
+
+@media (max-width: 1245px) {
+    ul{
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 628px) {
+    ul{
+        margin-right: 0px;
+        width: 100%;
+    }
+} 
+
+*/
+
+
+
+/* Para setear el alto de cada seccion, usar min height con vh. Si pasa el 100% de la pantalla, se va a generar el scroll */
+
+/* Usar los iconos con el html */
+
+
+
+
+
+/* 
+PREGUNTAS:
+1) Para fijar la barra de navegacion arriba, entiendo que la propiedad es position:fixed pero se me achica todo al contenido
+
+
+2) Esta bien si el unico boton (con etiqueta boton) es el de enviar del formulario? Porque contacto y lo que hago pueden ser simplemente a y p con el mismo estilo que el de enviar, se me ocurre.
+
+
+3) El box shadow no me lo toma si no tiene margin top la seccion de abajo. Por que puede ser?
+
+4) La medida em, le puedo setear 1px en *{ ? Pero se hereda no?
+
+*/
 

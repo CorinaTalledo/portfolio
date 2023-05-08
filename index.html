@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style.css">
 
+
     <title>Document</title>
 </head>
 <body>
@@ -14,26 +15,43 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#hola">HOLA</a></li>
-                <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                <li><a href="#proyectos">PROYECTOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
+                <li>
+                    <a href="#hola">HOLA</a>
+                </li>
+
+                <li>
+                    <a href="#conocimientos">CONOCIMIENTOS</a>
+                </li>
+
+                <li>
+                    <a href="#proyectos">PROYECTOS</a>
+                </li>
+                
+                <li>
+                    <a class="color-boton" href="#contacto">CONTACTO</a>
+                </li>
             </ul>
         </nav>
     </header>
 
 
     <main>
-        <section>
-            <h2><a name="hola">¡Hola! Soy <span>Corina Talledo</span></a></h2>
+        <section class="container-hola">
 
-            <p>Desarrolladora, guitarrista y fan de las matematicas</p>
-            
-            <button><a href="#proyectos">LO QUE HAGO</a></button>
+            <div class="container-texto-hola">
+                <h2><a name="hola">¡Hola! Soy<br><span class="nombre">Corina Talledo</span></a></h2>
+
+                <p>Desarrolladora, guitarrista y fan de las matematicas</p>
+
+                <a href="#proyectos" class="color-boton lo-que-hago" >LO QUE HAGO</a>
+            </div>
+
+            <img src="./img/retrato.png" alt="Corina Talledo" class="retrato">
+
         </section>
 
 
-        <section>
+        <section class="container-conocimientos">
             <h2><a name="conocimientos">Mis conocimientos</a></h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ex esse voluptatibus fugiat rerum enim sint eaque harum a at.</p>
@@ -47,27 +65,54 @@
         </section>
 
 
-        <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facere voluptatem porro eligendi nemo ut veniam cum cumque odio voluptates tempora laboriosam, minus dolorem officia corporis atque fugiat itaque. Error?
-        </p>
+        <section class="container-cita">
+            <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facere voluptatem porro eligendi nemo ut veniam cum cumque odio voluptates tempora laboriosam, minus dolorem officia corporis atque fugiat itaque. Error?</p>
+        </section>
 
 
-        <section>
+        <section class="container-proyectos">
             <h2><a name="proyectos">Mis proyectos</a></h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae assumenda nobis nihil, incidunt placeat a enim sequi cumque. Recusandae?</p>
 
-            <img src="./img/prueba-proyectos.jpg" alt="">
-            <img src="./img/prueba-proyectos.jpg" alt="">
-            <img src="./img/prueba-proyectos.jpg" alt="">
-            <img src="./img/prueba-proyectos.jpg" alt="">
-            <img src="./img/prueba-proyectos.jpg" alt="">
-            <img src="./img/prueba-proyectos.jpg" alt="">
+            <article>
+                <img src="./img/prueba-proyectos.jpg" alt="">
+                <h3>Portfolio</h3>
+            </article>
+
+
+            <article>
+                <img src="./img/prueba-proyectos.jpg" alt="">
+                <h3>Generador de memes</h3>
+            </article>
+
+            <article>
+                <img src="./img/prueba-proyectos.jpg" alt="">
+                <h3>Match 3</h3>
+            </article>
+
+
+            <article>
+                <img src="./img/prueba-proyectos.jpg" alt="">
+                <h3>Controlador de gastos</h3>
+            </article>
+
+
+            <article>
+                <img src="./img/prueba-proyectos.jpg" alt="">
+                <h3>Administrador de reuniones</h3>
+            </article>
+
+
+            <article>
+                <img src="./img/prueba-proyectos.jpg" alt="">
+                <h3>Todo app</h3>
+            </article>
             
         </section>
 
 
-
-        <section>
+        <section class="container-contacto">
             <h2><a name="contacto">Contactame</a></h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et officiis mollitia quisquam laborum fuga, ad vel dolore voluptates ea!</p>
@@ -86,22 +131,21 @@
             <p>Email</p>
             <p>Mensaje</p>
 
-            <button>Enviar</button>
+            <button class="color-boton">Enviar</button>
 
         </section>
     </main>
 
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="#hola">HOLA</a></li>
-                <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                <li><a href="#proyectos">PROYECTOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-        </nav>
-
+        
+        <ul>
+            <li><a href="#hola">HOLA</a></li>
+            <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
+            <li><a href="#proyectos">PROYECTOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        
 
         <ul>
             <li>git</li>
@@ -110,10 +154,5 @@
         </ul>
     </footer>
 
-
-
-
-
-    
 </body>
 </html>
