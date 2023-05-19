@@ -7,8 +7,13 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Oswald:wght@700&display=swap" rel="stylesheet">   
 
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/76f1588c46.js" crossorigin="anonymous"></script>
+
+    <title>Portfolio - Corina Talledo</title>
 </head>
 <body>
 
@@ -31,15 +36,19 @@
                     <a class="color-boton" href="#contacto">CONTACTO</a>
                 </li>
             </ul>
+
+            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
 
 
     <main>
-        <section class="container-hola">
+        <section class="section-hola">
 
             <div class="container-texto-hola">
-                <h2><a name="hola">¡Hola! Soy<br><span class="nombre">Corina Talledo</span></a></h2>
+                <a name="hola"></a>
+
+                <h2 class="texto-hola">¡Hola! Soy<br><span class="nombre">Corina Talledo</span></h2>
 
                 <p>Desarrolladora, guitarrista y fan de las matematicas</p>
 
@@ -52,68 +61,126 @@
 
 
         <section class="container-conocimientos">
-            <h2><a name="conocimientos">Mis conocimientos</a></h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ex esse voluptatibus fugiat rerum enim sint eaque harum a at.</p>
+            <a name="conocimientos"></a>
 
-            <img src="./img/images.png" alt="html">
-            <img src="./img/images.png" alt="html">
-            <img src="./img/images.png" alt="html">
-            <img src="./img/images.png" alt="html">
-            <img src="./img/images.png" alt="html">
-            <img src="./img/images.png" alt="html">
+            <h2>Mis Conocimientos</h2>
+
+            <p class="texto-conocimientos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ex esse voluptatibus fugiat rerum enim sint eaque harum a at.</p>
+
+            <div class="container-iconos">
+                <figure>
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML 5</h3>
+                </figure>
+                    
+                <figure>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </figure>
+                    
+                <figure>
+                    <i class="fa-brands fa-sass"></i>
+                    <h3>Sass</h3>
+                </figure>
+                    
+                <figure>
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </figure>
+                    
+                <figure>
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                </figure>
+                    
+                <figure>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                </figure>
+            </div>
         </section>
 
 
         <section class="container-cita">
-            <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facere voluptatem porro eligendi nemo ut veniam cum cumque odio voluptates tempora laboriosam, minus dolorem officia corporis atque fugiat itaque. Error?</p>
+
+            <i class="fa-solid fa-quote-right"></i>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facere voluptatem porro eligendi nemo ut veniam cum cumque odio voluptates tempora laboriosam, minus dolorem officia corporis atque fugiat itaque. Error?</p>
+
+            <h3>Someone</h3>
         </section>
 
 
         <section class="container-proyectos">
-            <h2><a name="proyectos">Mis proyectos</a></h2>
+
+            <a name="proyectos"></a>
+
+            <h2>Mis Proyectos</h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae assumenda nobis nihil, incidunt placeat a enim sequi cumque. Recusandae?</p>
 
+            <div>
             <article>
-                <img src="./img/prueba-proyectos.jpg" alt="">
-                <h3>Portfolio</h3>
+                <a href="">
+                    <img src="./img/prueba-proyectos.jpg" alt="">
+
+                    <h3>Portfolio</h3>
+                </a>
             </article>
 
 
             <article>
-                <img src="./img/prueba-proyectos.jpg" alt="">
-                <h3>Generador de memes</h3>
+                <a href="">
+                    <img src="./img/prueba-proyectos.jpg" alt="">
+
+                    <h3>Generador de memes</h3>
+                </a>
             </article>
 
             <article>
-                <img src="./img/prueba-proyectos.jpg" alt="">
-                <h3>Match 3</h3>
-            </article>
+                <a href="">
+                    <img src="./img/prueba-proyectos.jpg" alt="">
 
-
-            <article>
-                <img src="./img/prueba-proyectos.jpg" alt="">
-                <h3>Controlador de gastos</h3>
-            </article>
-
-
-            <article>
-                <img src="./img/prueba-proyectos.jpg" alt="">
-                <h3>Administrador de reuniones</h3>
+                    <h3>Match 3</h3>
+                </a>
             </article>
 
 
             <article>
-                <img src="./img/prueba-proyectos.jpg" alt="">
-                <h3>Todo app</h3>
+                <a href="">
+                    <img src="./img/prueba-proyectos.jpg" alt="">
+
+                    <h3>Controlador de gastos</h3>
+                </a>
+            </article>
+
+
+            <article>
+                <a href="">
+                    <img src="./img/prueba-proyectos.jpg" alt="">
+
+                    <h3>Administrador de reuniones</h3>
+                </a>
+            </article>
+
+
+            <article>
+                <a href="">
+                    <img src="./img/prueba-proyectos.jpg" alt="">
+
+                    <h3>Todo app</h3>
+                </a>
             </article>
             
         </section>
 
 
         <section class="container-contacto">
-            <h2><a name="contacto">Contactame</a></h2>
+
+            <a name="contacto"></a>
+
+            <h2>Contactame</h2>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et officiis mollitia quisquam laborum fuga, ad vel dolore voluptates ea!</p>
 
@@ -131,7 +198,7 @@
             <p>Email</p>
             <p>Mensaje</p>
 
-            <button class="color-boton">Enviar</button>
+            <button class="color-boton">ENVIAR</button>
 
         </section>
     </main>

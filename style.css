@@ -1,11 +1,64 @@
 
+/* CSS GENERAL */
+
 *{
-    margin: 0;
+    margin: 0;  
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+body{
     font-size: 1px;
 }
 
 
+section{
+    padding: 6% 15%;
+}
+
+
+p{
+    font-size: 16em;
+    color: #2e2e31;
+}
+
+
+h2{
+    font-size: 50em;
+    color: #2e2e31;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+
+a{
+    text-decoration: none;
+    color: #2e2e31;
+    font-size: 16em;
+}
+
+
+/* ------------------- */
+
 /* CSS NAVBAR */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+header a:not(.color-boton):hover{
+    color: #9D0B28;
+}
+
+
+header a:focus{
+    border-radius: 25px;
+    padding: 10px 15px;
+    box-shadow: rgb(255, 0, 51) 0px 1px 8px, rgb(255, 0, 51) 0px 0px 8px;
+}
 
 nav{
     display: flex;
@@ -20,18 +73,22 @@ nav{
 ul{
     list-style: none;
     display: flex;
-    width: 35%;
+    width: 40%;
     justify-content: space-around;
     margin-right: 10%;
+
+    /* border: 1px solid black; */
 }
 
 
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 16em;
+.fa-solid{
+    font-size: 40em;
+    color: #2e2e31;
+    display: none;
 }
 
+
+/* ------------------- */
 
 /* BOTONES */
 
@@ -41,80 +98,209 @@ a{
     color: #FFE5DE;
     border: 1px solid #FF004D;
     border-radius: 25px;
+    font-size: 16em;
 }
 
+
+.color-boton:hover{
+    background-color: #9D0B28;
+}
+
+
+.lo-que-hago{
+    width: fit-content;
+    margin-top: 10%;
+}
 
 /* ------------------- */
 
 
 /* CSS Seccion de presentacion */
 
-.container-hola{
-    min-height: 88vh;
+.section-hola{
+    min-height: 70vh;
     background-color: #FFE5DE;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
 .container-texto-hola{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 300px;
-    justify-content: space-evenly;
+    height: 50%;
+    justify-content: flex-start;
+}
+
+
+.texto-hola{
+    font-size: 32em;
+    font-family: 'DM Sans', sans-serif;
 }
 
 
 .nombre{
     color: #FF0033;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
     font-size: 2em;
-}
-
-
-.lo-que-hago{
-    width: fit-content;
 }
 
 
 .retrato{
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: 35%;
+    border-radius: 100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/* ------------------- */
+
+
+/* CSS Seccion de conocimientos */
+
+.container-conocimientos{
+    min-height: 110vh;
+    background-color: #fed7d7;
+    text-align: center;
 }
 
 
-h2{
-    font-size: 2em;
+.texto-conocimientos{
+    width: 30%;
+    padding: 40px 0px;
+    margin: auto;
 }
 
 
-p{
-    font-size: 16em;
+.container-iconos{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+
+figure{
+    border: 1px solid #e7e8ee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 220px;
+    margin: 10px 0px;
+    justify-content: center;
+    background-color: #FFE5DE;
+}
+
+
+figure:hover{
+    border: 1px solid #ff0033;
+}
+
+
+.fa-brands{
+    color: #2e2e31;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+
+.fa-html5{
+    color: #e54d26;
+}
+
+
+.fa-css3-alt{
+    color: #3d8fc6;
+}
+
+
+.fa-sass{
+    color: #cc6699;
+}
+
+
+.fa-js{
+    color: #f0db4f;
+}
+
+
+.fa-react{
+    color: #61dafb;
+}
+
+
+.fa-git-alt{
+    color: #f34f29;
+}
+
+
+h3{
+    font-size: 20em;
+    color: #2e2e31;
+}
+
+
+/* ------------------- */
+
+/* CSS SECCION CITA */
+
+
+.container-cita{
+    min-height: 55vh;
+    background-color: #FF0033;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container-cita>.fa-solid{
+    font-size: 120em;
+    color: #FFE5DE;
+}
+
+
+.container-cita>p{
+    font-size: 20em;
+    color: #FFE5DE;
+    width: 75%;
+    text-align: center;
+}
+
+
+.container-cita>h3{
+    font-size: 30em;
+    color: #FFE5DE;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
 }
 
 
 /* ------------------- */
 
 
-
-.container-conocimientos{
-    min-height: 120vh;
-    background-color: #fed7d7;
-}
-
-
-.container-cita{
-    min-height: 60vh;
-    background-color: #FF0033;
-}
+/* CSS SECCION PROYECTOS */
 
 
 .container-proyectos{
     min-height: 150vh;
     background-color: #FFE5DE;
 }
+
+a>h3{
+    font-size: 1em;
+    color: #100b0a;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+/* REVISAR ↑ */
 
 
 img{
@@ -123,11 +309,16 @@ img{
 }
 
 
+/* ------------------- */
+
+
+/* CSS SECCION CONTACTO */
+
+
 .container-contacto{
     min-height: 120vh;
     background-color: #fed7d7;
 }
-
 
 
 footer{
@@ -136,45 +327,76 @@ footer{
 }
 
 
-/* MEDIA QUERYS
 
-@media (max-width: 1245px) {
+/* MEDIA QUERYS */
+
+@media (max-width: 1250px) {
+    nav{
+        justify-content: center;
+    }
+
     ul{
+        width: 75%;
         margin-right: 0%;
+    }
+
+    .container-iconos{
         width: 100%;
+    }
+
+    .texto-conocimientos{
+        width: 50%;
     }
 }
 
-@media (max-width: 628px) {
-    ul{
-        margin-right: 0px;
-        width: 100%;
+
+@media (max-width: 1000px) {
+    .container-cita>p{
+        width: 95%;
     }
-} 
+}
+
+
+@media (max-width: 850px) {
+    ul{
+        display: none;
+    }
+
+    .fa-solid{
+        display: flex;
+    }
+
+    .texto-conocimientos{
+        width: 80%;
+    }
+}
+
+
+/*  - REVISAR MEDIAS QUERYS 
+    - REVISAR FOCUS Y ACTIVE DE NAVBAR Y PROYECTOS
+
+
+    USAR LA PSEUDOCLASE FOCUS PARA LOS PROYECTOS
 
 */
 
-
-
-/* Para setear el alto de cada seccion, usar min height con vh. Si pasa el 100% de la pantalla, se va a generar el scroll */
-
-/* Usar los iconos con el html */
 
 
 
 
 
 /* 
-PREGUNTAS:
-1) Para fijar la barra de navegacion arriba, entiendo que la propiedad es position:fixed pero se me achica todo al contenido
+----------------------
+PREGUNTAS
+---------------------- 
+
+1) La medida em, no se supone que se achique junto con la pantalla? No entiendo por que mi nombre baja de linea en vez de simplemente achicar la letra.
 
 
-2) Esta bien si el unico boton (con etiqueta boton) es el de enviar del formulario? Porque contacto y lo que hago pueden ser simplemente a y p con el mismo estilo que el de enviar, se me ocurre.
+2) Por alguna razon, el icono del menu hamburguesa y el quote se visualiza aunque diga display none y el de la cita desaparece o directamente no se visualiza 
 
-
-3) El box shadow no me lo toma si no tiene margin top la seccion de abajo. Por que puede ser?
-
-4) La medida em, le puedo setear 1px en *{ ? Pero se hereda no?
 
 */
+
+
 
