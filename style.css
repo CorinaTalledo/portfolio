@@ -2,7 +2,8 @@
 /* CSS GENERAL */
 
 *{
-    margin: 0;  
+    margin: 0;
+    padding: 0;  
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -58,6 +59,7 @@ header a:focus{
     border-radius: 25px;
     padding: 10px 15px;
     box-shadow: rgb(255, 0, 51) 0px 1px 8px, rgb(255, 0, 51) 0px 0px 8px;
+    outline: none;
 }
 
 nav{
@@ -98,7 +100,6 @@ ul{
     color: #FFE5DE;
     border: 1px solid #FF004D;
     border-radius: 25px;
-    font-size: 16em;
 }
 
 
@@ -202,10 +203,13 @@ figure:hover{
 }
 
 
-.fa-brands{
-    color: #2e2e31;
+figure:hover figcaption{
+    color: #FF0033;
+}
+
+
+.container-iconos i{
     font-size: 85px;
-    margin-bottom: 20px;
 }
 
 
@@ -239,9 +243,11 @@ figure:hover{
 }
 
 
-h3{
+figcaption{
     font-size: 20em;
     color: #2e2e31;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 
@@ -288,45 +294,257 @@ h3{
 /* CSS SECCION PROYECTOS */
 
 
-.container-proyectos{
+.proyectos{
     min-height: 150vh;
     background-color: #FFE5DE;
+    text-align: center;
 }
 
-a>h3{
-    font-size: 1em;
-    color: #100b0a;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+
+.proyectos p{
+    width: 45%;
+    padding: 40px 0px;
+    margin: auto;
 }
 
-/* REVISAR ↑ */
 
-
-img{
-    height: 100px;
-    width: 100px;
+.container-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
 }
+
+
+article{
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 310px;
+    margin-top: 20px;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+article:hover{
+    border: 1px solid #FF0033;
+}
+
+
+article>h3{
+    font-size: 1.1em;
+    color: #2e2e31;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+
+article:hover h3{
+    color: #FF0033;
+}
+
+
+.container-proyectos a:focus{
+    outline: none;
+    box-shadow: rgb(255, 0, 51) 0px 1px 8px, rgb(255, 0, 51) 0px 0px 8px;
+    border-radius: 10px;
+}
+
+
+.container-proyectos img{
+    width: 70%;
+    height: fit-content;
+    object-position: center;
+    object-fit: cover;
+    margin: auto;
+}
+
+
+/* ↑↑↑ REVISAR MARGEN 15PX DEL ARTICLE ↑↑↑ */
+
 
 
 /* ------------------- */
 
-
 /* CSS SECCION CONTACTO */
 
 
-.container-contacto{
+.contacto{
     min-height: 120vh;
     background-color: #fed7d7;
 }
 
 
-footer{
-    min-height: 30vh;
-    background-color: #FF0033;
+.container-contacto{
+    border: 1px solid #e7e8ee;
+    border-radius: 15px;
+    padding: 70px 55px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffe5de;
+    justify-content: space-between;
+    height: 500px;
 }
 
 
+.contactame{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactame p{
+    width: 75%;
+    margin: 50px 0px;
+}
+
+
+.contactame i{
+    font-size: 1.5em;
+    margin-right: 20px;
+    color: #FF0033;
+}
+
+
+.contactame ul{
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+
+.contactame a:hover{
+    color: #FF0033;
+}
+
+a:hover i{
+    color: #ffe5de;
+    background-color: #FF0033;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+/* ------------------ */
+
+
+.escribime{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+label{
+    font-size: 16em;
+}
+
+
+input, textarea{
+    border-radius: 25px;
+    border: transparent;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px 15px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+
+.nombre-apellido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+textarea{
+    height: 150px;
+    padding: 15px 15px;
+}
+
+
+/* ------------------- */
+
+/* CSS SECCION FOOTER */
+
+footer{
+    min-height: 45vh;
+    background-color: #FF0033;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container-footer{
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-footer p{
+    color: #ffe5de;
+}
+
+
+.nav-footer{
+    width: 65%;
+    margin: auto;
+}
+
+
+.nav-footer a{
+    color: #ffe5de;
+}
+
+
+.redes-footer{
+    font-size: 1.5em;
+    width: 25%;
+    margin: auto;
+}
+
+
+.redes-footer i{
+    color: #FF0033;
+    background-color: #ffe5de;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+.redes-footer i:hover{
+    color: #ffe5de;
+    background-color: transparent;
+    border: 1px solid #ffe5de;
+}
+
+
+.redes-footer .fa-envelope{
+    border: 1px solid black;
+    font-size: 1em;
+}
 
 /* MEDIA QUERYS */
 
@@ -372,15 +590,18 @@ footer{
 }
 
 
+
+
 /*  - REVISAR MEDIAS QUERYS 
     - REVISAR FOCUS Y ACTIVE DE NAVBAR Y PROYECTOS
 
 
     USAR LA PSEUDOCLASE FOCUS PARA LOS PROYECTOS
 
+
+    - Los botones tienen active, el resto de las cosas tiene focus ademas de hover (usar outline para sacarle el borde negro).
+
 */
-
-
 
 
 
@@ -390,13 +611,24 @@ footer{
 PREGUNTAS
 ---------------------- 
 
+
 1) La medida em, no se supone que se achique junto con la pantalla? No entiendo por que mi nombre baja de linea en vez de simplemente achicar la letra.
 
 
-2) Por alguna razon, el icono del menu hamburguesa y el quote se visualiza aunque diga display none y el de la cita desaparece o directamente no se visualiza 
+2) Por alguna razon, el icono del menu hamburguesa y el quote se visualiza aunque diga display none y el de la cita desaparece o directamente no se visualiza. El icono de email a veces se muestra y a veces no.
+
+
+3) Como centralizar correctamente la imagen y el texto de los proyectos
+
+
+4) Si no conviene setear ni padding ni margin a los lados, pero tampoco conviene ponerle width a los contenedores padres, como hago para que la info se centre? probar con margin auto
+
+
+5) NO PUEDO CENTRAR LAS IMAGENES DE PROYECTOS
+
+
+6) Cual seria el link que habria que poner en el icono de email?
+
 
 
 */
-
-
-
