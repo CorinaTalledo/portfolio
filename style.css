@@ -1,14 +1,12 @@
 
-/* CSS GENERAL */
+/*---------------------------
+CSS GENERAL
+---------------------------*/
 
 *{
     margin: 0;
-    padding: 0;  
+    padding: 0;
     font-family: 'DM Sans', sans-serif;
-}
-
-
-body{
     font-size: 1px;
 }
 
@@ -19,29 +17,131 @@ section{
 
 
 p{
-    font-size: 16em;
     color: #2e2e31;
-}
-
-
-h2{
-    font-size: 50em;
-    color: #2e2e31;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
 }
 
 
 a{
     text-decoration: none;
     color: #2e2e31;
-    font-size: 16em;
 }
 
 
-/* ------------------- */
 
-/* CSS NAVBAR */
+/*---------------------------
+CSS TEXTO
+---------------------------*/
+
+.text-size-s{
+    font-size: 14rem;
+}
+
+
+.text-size-m{
+    font-size: 16rem;
+}
+
+
+.text-size-l{
+    font-size: 18rem;
+}
+
+
+.title-style{
+    color: #2e2e31;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 50rem;
+}
+
+
+.text-hover-primary:hover{
+    color: #FF0033;
+}
+
+
+.skill-card:hover .text-hover-primary, .project-card:hover .text-hover-primary{
+    color: #FF0033;
+}
+
+
+
+/*---------------------------
+DISPLAY
+---------------------------*/
+
+.flex-container{
+    display: flex;
+}
+
+
+
+/*---------------------------
+PSEUDO-CLASES 
+---------------------------*/
+
+.box-hover-border:hover{
+    border: 1px solid #ff0033;
+}
+
+
+.is-focus-primary:focus{
+    box-shadow: rgb(255, 0, 51) 0px 1px 8px, rgb(255, 0, 51) 0px 0px 8px;
+    outline: none;
+}
+
+
+a:hover .icon-hover{
+    color: #ffe5de;
+    background-color: #FF0033;
+}
+
+
+.is-focus-footer:focus{
+    box-shadow: rgb(254,215,215) 0px 1px 8px, rgb(254,215,215) 0px 0px 8px;
+    outline: none;
+}
+
+
+
+/*---------------------------
+BOTONES 
+---------------------------*/
+
+.primary-button{
+    background-color: #FF0033;
+    color: #FFE5DE;
+    border-radius: 25px;
+    width: fit-content;
+}
+
+
+.primary-button:hover{
+    background-color: #9D0B28;
+}
+
+
+.nav-header a[href="#contact"]{
+    padding: 10px 30px;
+}
+
+
+.skills-button{
+    margin-top: 10%;
+    padding: 15px 40px;
+}
+
+
+.send-button{
+    padding: 18px 35px;
+    text-transform: uppercase;
+}
+
+
+
+/*---------------------------
+CSS NAV Y HEADER 
+---------------------------*/
 
 header{
     position: sticky;
@@ -50,20 +150,13 @@ header{
 }
 
 
-header a:not(.color-boton):hover{
-    color: #9D0B28;
-}
-
-
-header a:focus{
+header a{
     border-radius: 25px;
     padding: 10px 15px;
-    box-shadow: rgb(255, 0, 51) 0px 1px 8px, rgb(255, 0, 51) 0px 0px 8px;
-    outline: none;
 }
 
-nav{
-    display: flex;
+
+.nav-header-container{
     justify-content: flex-end;
     min-height: 12vh;
     background-color: #FFE5DE;
@@ -72,123 +165,86 @@ nav{
 }
 
 
-ul{
-    list-style: none;
-    display: flex;
+.nav-header{
     width: 40%;
     justify-content: space-around;
     margin-right: 10%;
-
-    /* border: 1px solid black; */
 }
 
 
-.fa-solid{
-    font-size: 40em;
-    color: #2e2e31;
-    display: none;
-}
 
+/*---------------------------
+CSS SECCION PRESENTACION 
+---------------------------*/
 
-/* ------------------- */
-
-/* BOTONES */
-
-.color-boton{
-    padding: 10px 30px;
-    background-color: #FF0033;
-    color: #FFE5DE;
-    border: 1px solid #FF004D;
-    border-radius: 25px;
-}
-
-
-.color-boton:hover{
-    background-color: #9D0B28;
-}
-
-
-.lo-que-hago{
-    width: fit-content;
-    margin-top: 10%;
-}
-
-/* ------------------- */
-
-
-/* CSS Seccion de presentacion */
-
-.section-hola{
+.presentation-container{
     min-height: 70vh;
     background-color: #FFE5DE;
-    display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
 }
 
 
-.container-texto-hola{
-    display: flex;
+.text-presentation-container{
     flex-direction: column;
-    height: 50%;
     justify-content: flex-start;
+    width: 60%;
 }
 
 
-.texto-hola{
-    font-size: 32em;
+.text-presentation-container h2{
+    font-size: 32rem;
     font-family: 'DM Sans', sans-serif;
+    color: #2e2e31;
 }
 
 
-.nombre{
+.text-presentation-container span{
     color: #FF0033;
-    font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 65rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 
-.retrato{
+.portrait{
     width: 35%;
     height: 35%;
     border-radius: 100%;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-/* ------------------- */
 
 
-/* CSS Seccion de conocimientos */
+/*---------------------------
+CSS SECCION CONOCIMIENTOS 
+---------------------------*/
 
-.container-conocimientos{
+.skills-container{
     min-height: 110vh;
     background-color: #fed7d7;
     text-align: center;
 }
 
 
-.texto-conocimientos{
-    width: 30%;
-    padding: 40px 0px;
+.skills-text{
+    width: 35%;
+    padding: 40px 0px 55px 0px;
     margin: auto;
 }
 
 
-.container-iconos{
+.icon-skills-container{
     width: 80%;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
 }
 
 
-figure{
-    border: 1px solid #e7e8ee;
+.skill-card{
+    border: 1px solid #cdcdcd;
     border-radius: 10px;
-    display: flex;
     flex-direction: column;
     width: 250px;
     height: 220px;
@@ -198,18 +254,8 @@ figure{
 }
 
 
-figure:hover{
-    border: 1px solid #ff0033;
-}
-
-
-figure:hover figcaption{
-    color: #FF0033;
-}
-
-
-.container-iconos i{
-    font-size: 85px;
+.skill-card i{
+    font-size: 85em;
 }
 
 
@@ -243,118 +289,94 @@ figure:hover figcaption{
 }
 
 
-figcaption{
-    font-size: 20em;
+.skill-card figcaption{
+    font-size: 20rem;
     color: #2e2e31;
     font-weight: bold;
     margin-top: 25px;
 }
 
 
-/* ------------------- */
 
-/* CSS SECCION CITA */
+/*---------------------------
+CSS SECCION CITA 
+---------------------------*/
 
-
-.container-cita{
+.quote-container{
     min-height: 55vh;
     background-color: #FF0033;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-
-.container-cita>.fa-solid{
-    font-size: 120em;
-    color: #FFE5DE;
-}
-
-
-.container-cita>p{
-    font-size: 20em;
-    color: #FFE5DE;
-    width: 75%;
     text-align: center;
 }
 
 
-.container-cita>h3{
-    font-size: 30em;
+.fa-quote-right{
+    font-size: 120rem;
+    color: #FFE5DE;
+}
+
+
+.quote-container>p{
+    font-size: 20rem;
+    color: #FFE5DE;
+    width: 75%;
+}
+
+
+.quote-container>h3{
+    font-size: 30rem;
     color: #FFE5DE;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
 
 
-/* ------------------- */
 
+/*---------------------------
+CSS SECCION PROYECTOS 
+---------------------------*/
 
-/* CSS SECCION PROYECTOS */
-
-
-.proyectos{
+.projects-container{
     min-height: 150vh;
     background-color: #FFE5DE;
     text-align: center;
 }
 
 
-.proyectos p{
+.projects-container p{
     width: 45%;
     padding: 40px 0px;
     margin: auto;
 }
 
 
-.container-proyectos{
-    display: flex;
+.projects-cards-container{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
 }
 
 
-article{
-    border: 1px solid #dcdcdc;
+.card-container{
+    border: 1px solid #cdcdcd;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     width: 340px;
     height: 310px;
+    margin-top: 20px;
+}
+
+
+.project-card{
+    flex-direction: column;
     margin-top: 20px;
     align-items: center;
     overflow: hidden;
 }
 
 
-article:hover{
-    border: 1px solid #FF0033;
-}
-
-
-article>h3{
-    font-size: 1.1em;
-    color: #2e2e31;
-    padding-bottom: 15px;
-    margin: auto;
-}
-
-
-article:hover h3{
-    color: #FF0033;
-}
-
-
-.container-proyectos a:focus{
-    outline: none;
-    box-shadow: rgb(255, 0, 51) 0px 1px 8px, rgb(255, 0, 51) 0px 0px 8px;
-    border-radius: 10px;
-}
-
-
-.container-proyectos img{
+.project-card img{
     width: 70%;
     height: fit-content;
     object-position: center;
@@ -363,154 +385,155 @@ article:hover h3{
 }
 
 
-/* ↑↑↑ REVISAR MARGEN 15PX DEL ARTICLE ↑↑↑ */
+.project-card>h3{
+    font-size: 18rem;
+    color: #2e2e31;
+    padding-bottom: 15px;
+    margin: auto;
+}
 
 
 
-/* ------------------- */
+/*---------------------------
+CSS SECCION CONOCIMIENTOS 
+---------------------------*/
 
-/* CSS SECCION CONTACTO */
-
-
-.contacto{
+.contact-container{
     min-height: 120vh;
     background-color: #fed7d7;
 }
 
 
-.container-contacto{
-    border: 1px solid #e7e8ee;
-    border-radius: 15px;
-    padding: 70px 55px;
-    display: flex;
-    flex-wrap: wrap;
+.contact-box{
     background-color: #ffe5de;
+    border: 1px solid #cdcdcd;
+    border-radius: 15px;
+    padding: 6% 5%;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 500px;
+    height: 750px;
 }
 
 
-.contactame{
-    width: 50%;
-    height: 80%;
-    display: flex;
+.contact-box h2{
+    margin-bottom: 8%;
+}
+
+
+.contact-column{
+    width: 45%;
     flex-direction: column;
 }
 
 
-.contactame p{
-    width: 75%;
-    margin: 50px 0px;
+.contact-column p{
+    width: 80%;
+    margin-bottom: 12%;
 }
 
 
-.contactame i{
-    font-size: 1.5em;
-    margin-right: 20px;
-    color: #FF0033;
-}
-
-
-.contactame ul{
-    display: flex;
+.user-link-container{
     flex-direction: column;
-    height: 35%;
-    width: 100%;
-    justify-content: space-around;
-    margin-left: 5%;
+    height: 25%;
+    justify-content: space-between;
+    margin-left: 2%;
 }
 
-.contactame a:hover{
+
+.user-link{
+    border-radius: 25px;
+    padding: 4px 9px;
+}
+
+
+.user-link i{
+    font-size: 20rem;
+    margin-right: 15px;
     color: #FF0033;
-}
-
-a:hover i{
-    color: #ffe5de;
-    background-color: #FF0033;
     border-radius: 50%;
     padding: 8px;
 }
 
 
-/* ------------------ */
+/* ----------- */
 
 
-.escribime{
+.form-column{
     width: 50%;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: start;
 }
 
 
-label{
-    font-size: 16em;
+.contact-form{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75%;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+
+.name-surname-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.name-surname-container label{
+    width: 48%;
 }
 
 
 input, textarea{
     border-radius: 25px;
     border: transparent;
-    height: 40px;
+    height: 85%;
     width: 100%;
     margin-top: 10px;
-    padding: 0px 15px;
+    /* padding-left: 15px; */
 }
 
+/* input[placeholder]{
+    padding-left: 15px;
+} */
 
-form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 80%;
-    justify-content: space-evenly;
-    margin-top: 20px;
-}
-
-
-.nombre-apellido{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+/* [placeholder]{     
+    padding-left: 15px;
+} */
 
 
 textarea{
-    height: 150px;
-    padding: 15px 15px;
+    height: 70%;
+    padding: 15px;
+    resize: none;
 }
 
 
-/* ------------------- */
 
-/* CSS SECCION FOOTER */
+/*---------------------------
+CSS SECCION CONOCIMIENTOS 
+---------------------------*/
 
 footer{
     min-height: 45vh;
     background-color: #FF0033;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 
-.container-footer{
-    width: 50%;
-    height: 200px;
+.footer-container{
+    width: 40%;
+    height: 180px;
     margin: auto;
-    display: flex;
     flex-direction: column;
-    text-align: center;
-}
-
-.container-footer p{
-    color: #ffe5de;
+    align-items: center;
 }
 
 
 .nav-footer{
     width: 65%;
-    margin: auto;
+    justify-content: space-between;
 }
 
 
@@ -519,72 +542,72 @@ footer{
 }
 
 
-.redes-footer{
-    font-size: 1.5em;
-    width: 25%;
+.icons-footer{
+    width: 30%;
     margin: auto;
+    justify-content: space-between;
 }
 
 
-.redes-footer i{
+.icons-footer a{
+    border-radius: 50%;
+    display: block;    
+}
+
+
+.icons-footer i{
     color: #FF0033;
     background-color: #ffe5de;
-    border-radius: 50%;
-    padding: 8px;
-}
-
-
-.redes-footer i:hover{
-    color: #ffe5de;
-    background-color: transparent;
     border: 1px solid #ffe5de;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 20rem;
 }
 
 
-.redes-footer .fa-envelope{
-    border: 1px solid black;
-    font-size: 1em;
+.footer-container p{
+    color: #ffe5de;
 }
 
-/* MEDIA QUERYS */
+
+
+/*---------------------------
+CSS SECCION CONOCIMIENTOS 
+---------------------------*/
 
 @media (max-width: 1250px) {
-    nav{
+    .nav-header-container{
         justify-content: center;
     }
 
-    ul{
+    .nav-header{
         width: 75%;
         margin-right: 0%;
     }
 
-    .container-iconos{
+    .icon-skills-container{
         width: 100%;
     }
 
-    .texto-conocimientos{
+    .skills-text{
         width: 50%;
     }
 }
 
 
 @media (max-width: 1000px) {
-    .container-cita>p{
+    .quote-container>p{
         width: 95%;
     }
 }
 
 
 @media (max-width: 850px) {
-    ul{
+    .nav-header{
         display: none;
     }
 
-    .fa-solid{
-        display: flex;
-    }
-
-    .texto-conocimientos{
+    .skills-text{
         width: 80%;
     }
 }
@@ -592,43 +615,28 @@ footer{
 
 
 
-/*  - REVISAR MEDIAS QUERYS 
-    - REVISAR FOCUS Y ACTIVE DE NAVBAR Y PROYECTOS
+/*  - REVISAR MEDIAS QUERYS
+    - REVISAR FOCUS Y ACTIVE DE NAVBAR Y projects
 
 
-    USAR LA PSEUDOCLASE FOCUS PARA LOS PROYECTOS
+    USAR LA PSEUDOCLASE FOCUS PARA LOS projects
 
 
     - Los botones tienen active, el resto de las cosas tiene focus ademas de hover (usar outline para sacarle el borde negro).
 
-*/
+
+    /* REVISAR ESTILOS TIPOGRAFIAS */
 
 
 
-
-/* 
+/*
 ----------------------
 PREGUNTAS
----------------------- 
+----------------------
 
 
-1) La medida em, no se supone que se achique junto con la pantalla? No entiendo por que mi nombre baja de linea en vez de simplemente achicar la letra.
+1) Cual seria el link que habria que poner en el icono de email?
 
-
-2) Por alguna razon, el icono del menu hamburguesa y el quote se visualiza aunque diga display none y el de la cita desaparece o directamente no se visualiza. El icono de email a veces se muestra y a veces no.
-
-
-3) Como centralizar correctamente la imagen y el texto de los proyectos
-
-
-4) Si no conviene setear ni padding ni margin a los lados, pero tampoco conviene ponerle width a los contenedores padres, como hago para que la info se centre? probar con margin auto
-
-
-5) NO PUEDO CENTRAR LAS IMAGENES DE PROYECTOS
-
-
-6) Cual seria el link que habria que poner en el icono de email?
-
-
+2) En el form, al ponerle un padding al input para que las letras queden mas a la izquierda, se me agranda el espacio y se corre del borde. Como hago?
 
 */

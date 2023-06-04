@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,245 +12,256 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Oswald:wght@700&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/76f1588c46.js" crossorigin="anonymous"></script>
 
     <title>Portfolio - Corina Talledo</title>
 </head>
+
 <body>
 
     <header>
-        <nav>
-            <ul>
+        <nav class="nav-header-container flex-container">
+            <ul class="nav-header flex-container">
                 <li>
-                    <a href="#hola">HOLA</a>
+                    <a href="#presentation" class="text-size-m text-hover-primary is-focus-primary">HOLA</a>
                 </li>
 
                 <li>
-                    <a href="#conocimientos">CONOCIMIENTOS</a>
+                    <a href="#skills" class="text-size-m text-hover-primary is-focus-primary">CONOCIMIENTOS</a>
                 </li>
 
                 <li>
-                    <a href="#proyectos">PROYECTOS</a>
+                    <a href="#projects" class="text-size-m text-hover-primary is-focus-primary">PROYECTOS</a>
                 </li>
-                
+
                 <li>
-                    <a class="color-boton" href="#contacto">CONTACTO</a>
+                    <a href="#contact" class="text-size-m primary-button is-focus-primary">CONTACTO</a>
                 </li>
             </ul>
-
-            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
 
 
     <main>
-        <section class="section-hola">
+        <section class="presentation-container flex-container">
+            <a name="presentation"></a>
 
-            <div class="container-texto-hola">
-                <a name="hola"></a>
+            <div class="text-presentation-container flex-container">
 
-                <h2 class="texto-hola">¡Hola! Soy<br><span class="nombre">Corina Talledo</span></h2>
+                <h2>¡Hola! Soy<br><span>Corina Talledo</span></h2>
 
-                <p>Desarrolladora, guitarrista y fan de las matematicas</p>
+                <p class="text-size-m">Desarrolladora, guitarrista y fan de las matematicas</p>
 
-                <a href="#proyectos" class="color-boton lo-que-hago" >LO QUE HAGO</a>
+                <a href="#projects" class="skills-button primary-button text-size-m is-focus-primary">LO QUE HAGO</a>
             </div>
 
-            <img src="./img/retrato.png" alt="Corina Talledo" class="retrato">
-
+            <img src="./img/portrait.png" alt="Corina Talledo" class="portrait">
         </section>
 
 
-        <section class="container-conocimientos">
+        <section class="skills-container">
 
-            <a name="conocimientos"></a>
+            <a name="skills"></a>
 
-            <h2>Mis Conocimientos</h2>
+            <h2 class="title-style">Mis Conocimientos</h2>
 
-            <p class="texto-conocimientos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ex esse voluptatibus fugiat rerum enim sint eaque harum a at.</p>
+            <p class="skills-text text-size-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ex
+                esse voluptatibus fugiat rerum enim sint eaque harum a at.</p>
 
-            <div class="container-iconos">
-                <figure>
+            <div class="icon-skills-container flex-container">
+                <figure class="skill-card flex-container box-hover-border">
                     <i class="fa-brands fa-html5"></i>
-                    <figcaption>HTML 5</figcaption>
+                    <figcaption class="text-hover-primary">HTML 5</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="skill-card flex-container box-hover-border">
                     <i class="fa-brands fa-css3-alt"></i>
-                    <figcaption>CSS</figcaption>
+                    <figcaption class="text-hover-primary">CSS</figcaption>
                 </figure>
-                    
-                <figure>
+
+                <figure class="skill-card flex-container box-hover-border">
                     <i class="fa-brands fa-sass"></i>
-                    <figcaption>Sass</figcaption>
+                    <figcaption class="text-hover-primary">Sass</figcaption>
                 </figure>
-                    
-                <figure>
+
+                <figure class="skill-card flex-container box-hover-border">
                     <i class="fa-brands fa-js"></i>
-                    <figcaption>JavaScript</figcaption>
+                    <figcaption class="text-hover-primary">JavaScript</figcaption>
                 </figure>
-                    
-                <figure>
+
+                <figure class="skill-card flex-container box-hover-border">
                     <i class="fa-brands fa-react"></i>
-                    <figcaption>React</figcaption>
+                    <figcaption class="text-hover-primary">React</figcaption>
                 </figure>
-                    
-                <figure>
+
+                <figure class="skill-card flex-container box-hover-border">
                     <i class="fa-brands fa-git-alt"></i>
-                    <figcaption>Git</figcaption>
+                    <figcaption class="text-hover-primary">Git</figcaption>
                 </figure>
             </div>
+
         </section>
 
 
-        <section class="container-cita">
+        <section class="quote-container flex-container">
 
             <i class="fa-solid fa-quote-right"></i>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facere voluptatem porro eligendi nemo ut veniam cum cumque odio voluptates tempora laboriosam, minus dolorem officia corporis atque fugiat itaque. Error?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facere voluptatem porro eligendi nemo ut
+                veniam cum cumque odio voluptates tempora laboriosam, minus dolorem officia corporis atque fugiat
+                itaque. Error?</p>
 
             <h3>Someone</h3>
         </section>
 
 
-        <section class="proyectos">
+        <section class="projects-container">
 
-            <a name="proyectos"></a>
+            <a name="projects"></a>
 
-            <h2>Mis Proyectos</h2>
+            <h2 class="title-style">Mis Proyectos</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae assumenda nobis nihil, incidunt placeat a enim sequi cumque. Recusandae?</p>
+            <p class="text-size-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae assumenda
+                nobis nihil, incidunt placeat a enim sequi cumque. Recusandae?</p>
 
-            <div class="container-proyectos">
-                <a href="">
-                    <article>
+            <div class="projects-cards-container flex-container">
+                <a href="/" class="card-container is-focus-primary box-hover-border">
+                    <article class="project-card flex-container">
                         <img src="./img/profile.png" alt="">
 
-                        <h3>Portfolio</h3>
+                        <h3 class="text-hover-primary">Portfolio</h3>
                     </article>
                 </a>
 
 
-                <a href="">
-                    <article>
+                <a href="" class="card-container is-focus-primary box-hover-border">
+                    <article class="project-card flex-container">
                         <img src="./img/memes.png" alt="">
 
-                        <h3>Generador de memes</h3>
+                        <h3 class="text-hover-primary">Generador de memes</h3>
                     </article>
                 </a>
 
 
-                <a href="">
-                    <article>
+                <a href="" class="card-container is-focus-primary box-hover-border">
+                    <article class="project-card flex-container">
                         <img src="./img/match.png" alt="">
 
-                        <h3>Match 3</h3>
+                        <h3 class="text-hover-primary">Match 3</h3>
                     </article>
                 </a>
 
 
-                <a href="">
-                    <article>
+                <a href="" class="card-container is-focus-primary box-hover-border">
+                    <article class="project-card flex-container">
                         <img src="./img/gastos.png" alt="">
 
-                        <h3>Controlador de gastos</h3>
+                        <h3 class="text-hover-primary">Controlador de gastos</h3>
                     </article>
                 </a>
 
 
-                <a href="">
-                    <article>
+                <a href="" class="card-container is-focus-primary box-hover-border">
+                    <article class="project-card flex-container">
                         <img src="./img/calendar.png" alt="">
 
-                        <h3>Administrador de reuniones</h3>
+                        <h3 class="text-hover-primary">Administrador de reuniones</h3>
                     </article>
                 </a>
 
 
-                <a href="">
-                    <article>
+                <a href="" class="card-container is-focus-primary box-hover-border">
+                    <article class="project-card flex-container">
                         <img src="./img/todo-app.png" alt="">
 
-                        <h3>Todo app</h3>
+                        <h3 class="text-hover-primary">Todo app</h3>
                     </article>
                 </a>
 
 
-                <a href="">
-                    <article>
+                <a href="" class="card-container is-focus-primary box-hover-border">
+                    <article class="project-card flex-container">
                         <img src="./img/movies.png" alt="">
 
-                        <h3>Buscador de películas</h3>
+                        <h3 class="text-hover-primary">Buscador de películas</h3>
                     </article>
                 </a>
             </div>
         </section>
 
 
-        <section class="contacto">
+        <section class="contact-container">
 
-            <a name="contacto"></a>
+            <a name="contact"></a>
 
-            <div class="container-contacto">
-                <div class="contactame">
-                    <h2>Contactame</h2>
+            <div class="contact-box flex-container">
+                <div class="contact-column flex-container">
+                    <h2 class="title-style">Contactame</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et officiis mollitia quisquam laborum fuga, ad vel dolore voluptates ea!</p>
+                    <p class="text-size-m">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et
+                        officiis mollitia quisquam laborum fuga, ad vel dolore voluptates ea!</p>
 
-                    <ul>
-                        <li>
-                            <a href="https://github.com/CorinaTalledo">
-                                <i class="fa-brands fa-github-alt"></i>CorinaTalledo
+                    <ul class="user-link-container flex-container">
+                        <li class="flex-container">
+                            <a href="https://github.com/CorinaTalledo"
+                                class="user-link text-size-m text-hover-primary is-focus-primary">
+                                <i class="fa-brands fa-github-alt icon-hover"></i>CorinaTalledo
                             </a>
                         </li>
 
-                        <li>
-                            <a href="https://www.linkedin.com/in/ctalledo/">
-                                <i class="fa-brands fa-linkedin-in"></i>ctalledo
+                        <li class="flex-container">
+                            <a href="https://www.linkedin.com/in/ctalledo/"
+                                class="user-link text-size-m text-hover-primary is-focus-primary">
+                                <i class="fa-brands fa-linkedin-in icon-hover"></i>ctalledo
                             </a>
                         </li>
 
-                        <li>
-                            <a href="">
-                                <i class="fa-solid fa-envelope"></i>corina.talledo@gmail.com
+                        <li class="flex-container">
+                            <a href="" class="user-link text-size-m text-hover-primary is-focus-primary">
+                                <i class="fa-solid fa-envelope icon-hover"></i>corina.talledo@gmail.com
                             </a>
                         </li>
-                    </ul>         
+                    </ul>
                 </div>
 
-                <div class="escribime">
-                    <h2>Escribime</h2>
+                <div class="form-column flex-container">
+                    <h2 class="title-style">Escribeme</h2>
 
-                    <form id="form-contacto">
+                    <form id="contact-form" class="contact-form flex-container">
 
-                        <div class="nombre-apellido">
-                            <label for="nombre">Nombre *
-                                <input id="nombre" type="text" required placeholder="Ej: Florencia">
+                        <div class="name-surname-container flex-container">
+                            <label for="nombre" class="text-size-m">Nombre *
+                                <input id="nombre" type="text" required placeholder="Ej: Florencia"
+                                    class="text-size-s is-focus-primary">
                             </label>
 
-
-                            <label for="apellido">Apellido *
-                                <input type="text" id="apellido" required placeholder="Ej: Martinez">
+                            <label for="apellido" class="text-size-m">Apellido *
+                                <input type="text" id="apellido" required placeholder="Ej: Martinez"
+                                    class="text-size-s is-focus-primary">
                             </label>
                         </div>
 
 
-                        <label for="email">Email *
-                            <input type="email" id="email" required placeholder="Ej: florenciamartinez@gmail.com">
+                        <label for="email" class="text-size-m">Email *
+                            <input type="email" id="email" required placeholder="Ej: florenciamartinez@gmail.com"
+                                class="text-size-s is-focus-primary">
                         </label>
-                        
 
-                        <label for="mensaje">Mensaje *
-                            <textarea name="" id="mensaje" cols="30" rows="10" required placeholder="Escribe aquí tu mensaje y responderé a la mayor brevedad posible. Gracias por contactarme :)"></textarea>
+
+                        <label for="mensaje" class="text-size-m">Mensaje *
+                            <textarea name="" id="mensaje" cols="30" rows="10" required
+                                placeholder="Escribe aquí tu mensaje y responderé a la mayor brevedad posible. Gracias por contactarme :)"
+                                class="text-size-s is-focus-primary"></textarea>
                         </label>
-                        
-                        
+
                         <label for="submit">
-                            <input type="submit" id="submit" class="color-boton">
+                            <input type="submit" id="submit"
+                                class="send-button primary-button text-size-m is-focus-primary">
                         </label>
-                        
+
                     </form>
                 </div>
             </div>
@@ -257,53 +269,54 @@
     </main>
 
 
-    <footer>
-        
-        <div class="container-footer">
-            <ul class="nav-footer">
+    <footer class="flex-container">
+
+        <div class="footer-container flex-container">
+            <ul class="nav-footer flex-container">
                 <li>
-                    <a href="#hola">HOLA</a>
+                    <a href="#presentation" class="text-size-s is-focus-footer">HOLA</a>
                 </li>
 
                 <li>
-                    <a href="#conocimientos">CONOCIMIENTOS</a>
+                    <a href="#skills" class="text-size-s is-focus-footer">CONOCIMIENTOS</a>
                 </li>
 
                 <li>
-                    <a href="#proyectos">PROYECTOS</a>
+                    <a href="#projects" class="text-size-s is-focus-footer">PROYECTOS</a>
                 </li>
 
                 <li>
-                    <a href="#contacto">CONTACTO</a>
-                </li>
-            </ul>
-            
-
-            <ul class="redes-footer">
-                <li>
-                    <a href="https://github.com/CorinaTalledo">
-                        <i class="fa-brands fa-github-alt"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/ctalledo/">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
+                    <a href="#contact" class="text-size-s is-focus-footer">CONTACTO</a>
                 </li>
             </ul>
 
 
-            <p>Hecho con <span>&#128420;</span> por Coco</p>
+            <ul class="icons-footer flex-container">
+                <li>
+                    <a href="https://github.com/CorinaTalledo" class="is-focus-footer">
+                        <i class="fa-brands fa-github-alt icon-hover"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/ctalledo/" class="is-focus-footer">
+                        <i class="fa-brands fa-linkedin-in icon-hover"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="is-focus-footer">
+                        <i class="fa-solid fa-envelope icon-hover"></i>
+                    </a>
+                </li>
+            </ul>
+
+
+            <p class="text-size-m">Hecho con <span class="text-size-m">&#128420;</span> por Coco</p>
         </div>
 
     </footer>
 
 </body>
+
 </html>
