@@ -322,6 +322,7 @@ CSS SECCION CITA
     font-size: 20rem;
     color: #FFE5DE;
     width: 75%;
+    border: 1px solid black;
 }
 
 
@@ -331,7 +332,6 @@ CSS SECCION CITA
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
-
 
 
 /*---------------------------
@@ -395,7 +395,7 @@ CSS SECCION PROYECTOS
 
 
 /*---------------------------
-CSS SECCION CONOCIMIENTOS 
+CSS SECCION CONTACTO 
 ---------------------------*/
 
 .contact-container{
@@ -528,6 +528,7 @@ footer{
     margin: auto;
     flex-direction: column;
     align-items: center;
+    border: 1px solid black;
 }
 
 
@@ -572,8 +573,27 @@ footer{
 
 
 /*---------------------------
-CSS SECCION CONOCIMIENTOS 
+CSS MEDIA QUERYS 
 ---------------------------*/
+
+@media (max-width: 1400px){
+    section{
+        padding: 6% 10%;
+    }
+    
+    .icon-skills-container{
+        width: 100%;
+    }
+
+    .projects-cards-container{
+        justify-content: space-evenly;
+    }
+
+    .footer-container{
+        width: 50%;
+    }
+}
+
 
 @media (max-width: 1250px) {
     .nav-header-container{
@@ -585,58 +605,92 @@ CSS SECCION CONOCIMIENTOS
         margin-right: 0%;
     }
 
-    .icon-skills-container{
-        width: 100%;
-    }
-
     .skills-text{
         width: 50%;
+    }
+
+    .projects-container p{
+        width: 65%;
+    }
+
+    .footer-container{
+        width: 60%;
     }
 }
 
 
 @media (max-width: 1000px) {
+    .presentation-container{
+        flex-direction: column;
+    }
+
+    .text-presentation-container{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .portrait{
+        width: 50%;
+        height: 50%;
+        margin-top: 10%;
+    }
+
     .quote-container>p{
-        width: 95%;
-    }
-}
-
-
-@media (max-width: 850px) {
-    .nav-header{
-        display: none;
+        width: 100%;
     }
 
-    .skills-text{
+    .projects-container p{
+        width: 80%;
+    }
+
+    .footer-container{
         width: 80%;
     }
 }
 
 
+@media (max-width: 850px) {
+    section{
+        padding: 6% 8%;
+    }
+    
+    .nav-header{
+        display: none;
+    }
 
+    .skills-text{
+        width: 100%;
+    }
 
-/*  - REVISAR MEDIAS QUERYS
-    - REVISAR FOCUS Y ACTIVE DE NAVBAR Y projects
+    .projects-container p{
+        width: 100%;
+    }
 
+    .footer-container{
+        width: 100%;
+    }
+}
 
-    USAR LA PSEUDOCLASE FOCUS PARA LOS projects
+/* --------------------- */
 
-
-    - Los botones tienen active, el resto de las cosas tiene focus ademas de hover (usar outline para sacarle el borde negro).
-
-
-    /* REVISAR ESTILOS TIPOGRAFIAS */
 
 
 
 /*
+    HACERLE ACTIVE A LOS BOTONES!!
+/*
+
+
 ----------------------
 PREGUNTAS
 ----------------------
 
-
 1) Cual seria el link que habria que poner en el icono de email?
 
 2) En el form, al ponerle un padding al input para que las letras queden mas a la izquierda, se me agranda el espacio y se corre del borde. Como hago?
+
+
+3) No me anda el wrap del formulario
 
 */
