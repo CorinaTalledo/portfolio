@@ -113,6 +113,7 @@ BOTONES
     color: #FFE5DE;
     border-radius: 25px;
     width: fit-content;
+    transition: 0.1s;
 }
 
 
@@ -121,12 +122,17 @@ BOTONES
 }
 
 
+.primary-button:active{
+    background-color: #FF0033;
+}
+
+
 .nav-header a[href="#contact"]{
     padding: 10px 30px;
 }
 
 
-.skills-button{
+.projects-button{
     margin-top: 10%;
     padding: 15px 40px;
 }
@@ -322,7 +328,6 @@ CSS SECCION CITA
     font-size: 20rem;
     color: #FFE5DE;
     width: 75%;
-    border: 1px solid black;
 }
 
 
@@ -410,7 +415,6 @@ CSS SECCION CONTACTO
     border-radius: 15px;
     padding: 6% 5%;
     flex-wrap: wrap;
-    justify-content: space-between;
     height: 750px;
 }
 
@@ -423,6 +427,7 @@ CSS SECCION CONTACTO
 .contact-column{
     width: 45%;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 
@@ -452,6 +457,7 @@ CSS SECCION CONTACTO
     color: #FF0033;
     border-radius: 50%;
     padding: 8px;
+    transition: 0.2s;
 }
 
 
@@ -459,10 +465,11 @@ CSS SECCION CONTACTO
 
 
 .form-column{
-    width: 50%;
+    width: 54%;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: start;
+    border: 1px solid black;
 }
 
 
@@ -470,8 +477,9 @@ CSS SECCION CONTACTO
     flex-direction: column;
     flex-wrap: wrap;
     height: 75%;
+    width: 100%;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 1px solid rgb(198, 16, 16);
 }
 
 
@@ -486,16 +494,22 @@ CSS SECCION CONTACTO
 }
 
 
+.half-input{
+    width: 80%;
+    padding-left: 15px;
+}
+
+
 input, textarea{
     border-radius: 25px;
-    border: transparent;
+    border: none;
     height: 85%;
-    width: 100%;
+    /* width: 80%; */
     margin-top: 10px;
     /* padding-left: 15px; */
 }
 
-/* input[placeholder]{
+/* input::placeholder{
     padding-left: 15px;
 } */
 
@@ -508,6 +522,7 @@ textarea{
     height: 70%;
     padding: 15px;
     resize: none;
+    width: 100%;
 }
 
 
@@ -528,7 +543,6 @@ footer{
     margin: auto;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
 }
 
 
@@ -563,6 +577,7 @@ footer{
     border-radius: 50%;
     padding: 12px;
     font-size: 20rem;
+    transition: 0.2s;
 }
 
 
@@ -654,10 +669,6 @@ CSS MEDIA QUERYS
     section{
         padding: 6% 8%;
     }
-    
-    .nav-header{
-        display: none;
-    }
 
     .skills-text{
         width: 100%;
@@ -667,10 +678,63 @@ CSS MEDIA QUERYS
         width: 100%;
     }
 
+    .contact-box{
+        height: 1000px;
+        display: block;
+    }
+
+    .contact-box div{
+        width: 100%;
+    }
+
+    .contact-box h2{
+        text-align: center;
+    }
+
+    .contact-column p{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+    .user-link-container{
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 12%;
+    }
+
     .footer-container{
         width: 100%;
     }
 }
+
+
+@media (max-width: 580px){    
+    .nav-header{
+        display: none;
+    }
+
+    .user-link i{
+        margin-right: 5px;
+    }
+    
+    .nav-footer{
+        display: none;
+    }
+
+    .icons-footer{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 320px){
+    .icons-footer{
+        width: 80%;
+    }
+}
+
+
 
 /* --------------------- */
 
@@ -679,6 +743,8 @@ CSS MEDIA QUERYS
 
 /*
     HACERLE ACTIVE A LOS BOTONES!!
+
+    TRANSITIOOOONNSSS!!
 /*
 
 
@@ -688,9 +754,8 @@ PREGUNTAS
 
 1) Cual seria el link que habria que poner en el icono de email?
 
-2) En el form, al ponerle un padding al input para que las letras queden mas a la izquierda, se me agranda el espacio y se corre del borde. Como hago?
+2) En el form, al ponerle un padding al input para que las letras queden mas a la izquierda, se me agranda el espacio y se corre del borde. MANDAR REPO
 
-
-3) No me anda el wrap del formulario
+3) No me anda el wrap del formulario: CAMBIAR EL DISPLAY A BLOCK EN MEDIA QUERY
 
 */
