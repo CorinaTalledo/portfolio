@@ -100,9 +100,15 @@ a:hover .icon-hover{
 .is-focus-footer:focus{
     box-shadow: rgb(254,215,215) 0px 1px 8px, rgb(254,215,215) 0px 0px 8px;
     outline: none;
+
 }
 
-
+.is-focus-footer:focus .icon-hover{
+    color: #ffe5de;
+    background-color: #FF0033;
+    box-shadow: rgb(254,215,215) 0px 1px 8px, rgb(254,215,215) 0px 0px 8px;
+    outline: none;
+}
 
 /*---------------------------
 BOTONES 
@@ -427,7 +433,6 @@ CSS SECCION CONTACTO
 .contact-column{
     width: 45%;
     flex-direction: column;
-    border: 1px solid black;
 }
 
 
@@ -469,23 +474,33 @@ CSS SECCION CONTACTO
     flex-direction: column;
     flex-wrap: wrap;
     align-content: start;
-    border: 1px solid black;
 }
 
 
 .contact-form{
     flex-direction: column;
     flex-wrap: wrap;
-    height: 75%;
+    height: 70%;
     width: 100%;
     justify-content: space-between;
-    border: 1px solid rgb(198, 16, 16);
+}
+
+
+input, textarea{
+    border-radius: 25px;
+    border: none;
+    height: 85%;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 
 
 .name-surname-container{
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -495,34 +510,127 @@ CSS SECCION CONTACTO
 
 
 .half-input{
-    width: 80%;
-    padding-left: 15px;
+    width: 100%;
 }
-
-
-input, textarea{
-    border-radius: 25px;
-    border: none;
-    height: 85%;
-    /* width: 80%; */
-    margin-top: 10px;
-    /* padding-left: 15px; */
-}
-
-/* input::placeholder{
-    padding-left: 15px;
-} */
-
-/* [placeholder]{     
-    padding-left: 15px;
-} */
-
 
 textarea{
     height: 70%;
     padding: 15px;
     resize: none;
-    width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    .presentation-container{
+        flex-direction: column;
+    }
+
+    .text-presentation-container{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .portrait{
+        width: 50%;
+        height: 50%;
+        margin-top: 10%;
+    }
+
+    .quote-container>p{
+        width: 100%;
+    }
+
+    .projects-container p{
+        width: 80%;
+    }
+
+    .footer-container{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 850px) {
+    section{
+        padding: 6% 8%;
+    }
+
+    .skills-text{
+        width: 100%;
+    }
+
+    .projects-container p{
+        width: 100%;
+    }
+
+    .contact-box{
+        display: block;
+        height: 1000px;
+    }
+
+    .contact-box div{
+        width: 100%;
+    }
+
+    .contact-box h2{
+        text-align: center;
+    }
+
+    .contact-column p{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+    .user-link-container{
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    
+    label{
+        margin-bottom: 4%;
+    }
+
+    .name-surname-container{
+        margin-bottom: 4%;
+    }
+
+    .email-input{
+        height: 45px;
+    }
+
+
+    .footer-container{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 580px){    
+    .nav-header{
+        display: none;
+    }
+
+    .user-link i{
+        margin-right: 5px;
+    }
+    
+    .nav-footer{
+        display: none;
+    }
+
+    .icons-footer{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 320px){
+    .icons-footer{
+        width: 80%;
+    }
 }
 
 
@@ -739,23 +847,12 @@ CSS MEDIA QUERYS
 /* --------------------- */
 
 
-
-
 /*
-    HACERLE ACTIVE A LOS BOTONES!!
-
-    TRANSITIOOOONNSSS!!
-/*
-
-
 ----------------------
 PREGUNTAS
 ----------------------
 
-1) Cual seria el link que habria que poner en el icono de email?
 
 2) En el form, al ponerle un padding al input para que las letras queden mas a la izquierda, se me agranda el espacio y se corre del borde. MANDAR REPO
-
-3) No me anda el wrap del formulario: CAMBIAR EL DISPLAY A BLOCK EN MEDIA QUERY
 
 */
